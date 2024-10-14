@@ -1,0 +1,70 @@
+.signup-container {
+    background-color: #fdf7e9;
+    padding: 40px;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // 책의 입체감 반영
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 28px;
+        color: #4b3832; // 어두운 고전적 색상
+        font-family: 'Georgia', serif; // 책 제목 같은 느낌을 주는 폰트
+    }
+
+    .signup-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px;
+
+        button {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Georgia', serif; // 서체 통일성
+            font-weight: bold;
+            cursor: pointer;
+
+            &.kakao {
+                background-color: #fee500;
+                color: #3c1e1e;
+            }
+
+            &.naver {
+                background-color: #03c75a;
+                color: white;
+            }
+
+            &.google {
+                background-color: #ffffff;
+                color: #333;
+                border: 1px solid #ddd;
+            }
+
+            &.apple {
+                background-color: #000000;
+                color: white;
+            }
+
+            &.email {
+                background-color: #8b5e34;
+                color: white;
+            }
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+
+    .already-member {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #666;
+    }
+}

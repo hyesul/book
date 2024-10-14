@@ -1,0 +1,95 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f3eb; // 책 페이지처럼 밝은 베이지색 배경
+  font-family: 'Georgia', serif; // 책 느낌을 주는 세리프 폰트 사용
+
+  h2 {
+    margin-bottom: 20px;
+    color: #4b3832; // 고전적인 다크 브라운 색상
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // 책 모양의 입체감을 위해 그림자 추가
+    padding: 40px;
+    width: 350px; // 넓은 폼
+    border: 1px solid #e0dacc; // 얇은 테두리로 책 페이지 느낌
+    display: flex;
+    flex-direction: column; // 입력 필드와 버튼이 세로로 정렬
+    align-items: center;
+
+    input,
+    button {
+      width: 100%; // 모든 입력 필드와 버튼을 동일한 너비로 설정
+      max-width: 300px; // 최대 너비 설정
+      margin: 10px 0; // 위아래 여백 추가
+      text-align: center; // 버튼 내 텍스트도 중앙 정렬
+      padding: 12px; // 입력 필드와 버튼의 패딩 일치
+      box-sizing: border-box; // 패딩과 보더를 포함한 크기 계산
+    }
+
+    input {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+
+      &:focus {
+        border-color: #9b7d5c; // 책갈피 색상과 비슷한 포커스 색
+        outline: none;
+      }
+    }
+
+    button {
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    // 기본 로그인 버튼 스타일
+    button[type="submit"] {
+      background-color: #8b5e34; // 파란색
+      color: white;
+
+      &:hover {
+        background-color: #1565c0;
+      }
+    }
+
+    // 카카오 로그인 버튼 스타일
+    .kakao-login {
+      background-color: #FEE500; // 카카오 노란색
+      color: #3c1e1e; // 카카오 검은색 텍스트
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        background-image: url('https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png'); // 카카오 로고 이미지
+        background-size: cover;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+
+      &:hover {
+        background-color: #e4d000; // 약간 어두운 노란색
+      }
+    }
+  }
+}
